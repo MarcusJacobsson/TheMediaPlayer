@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:title="@string/cm_video_properties"
+        android:id="@+id/video_properties"></item>
+    
+    <item
+        android:title="@string/cm_video_share"
+        android:id="@+id/video_share"
+        ></item>
+
+</menu>
+<!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/menu/context_menu_video.xml -->

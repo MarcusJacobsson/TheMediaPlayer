@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dv106.lnu.themediaplayer"
+    android:versionCode="9"
+    android:versionName="1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- For the visualizer -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity android:name="dv106.lnu.themediaplayer.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="dv106.lnu.themediaplayer.activities.PlaySongActivity" />
+        <activity android:name="dv106.lnu.themediaplayer.activities.ShowPlaylistActivity" />
+        <activity android:name="dv106.lnu.themediaplayer.activities.PlayVideoActivity" />
+        <activity
+            android:name="dv106.lnu.themediaplayer.preferences.PreferencesActivity"
+            android:theme="@style/MyTheme" />
+
+        <service android:name="dv106.lnu.themediaplayer.service.SongService" />
+
+        <receiver android:name="dv106.lnu.themediaplayer.intentreceiver.MusicIntentReceiver" >
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="dv106.lnu.themediaplayer.widgetprovider.SongAppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/themediaplayer_appwidget" />
+        </receiver>
+    </application>
+
+</manifest>

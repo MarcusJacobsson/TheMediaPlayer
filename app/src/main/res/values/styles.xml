@@ -1,0 +1,47 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyTheme">
+        <item name="@android:textAppearance">@style/MyDefaultTextAppearance</item>
+    </style>
+
+    <style name="MyDefaultTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+    <item name="android:bottomBright">@color/white</item>
+    <item name="android:bottomDark">@color/white</item>
+    <item name="android:bottomMedium">@color/white</item>
+    <item name="android:centerBright">@color/white</item>
+    <item name="android:centerDark">@color/white</item>
+    <item name="android:centerMedium">@color/white</item>
+    <item name="android:fullBright">@color/green</item>
+    <item name="android:fullDark">@color/green</item>
+    <item name="android:topBright">@color/green</item>
+    <item name="android:topDark">@color/green</item>
+	</style>
+	
+    <style name="CustomDialog">
+    <item name="android:alertDialogStyle">@style/CustomDialogTheme</item>
+	</style>
+
+</resources>

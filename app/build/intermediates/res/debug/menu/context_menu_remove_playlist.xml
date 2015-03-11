@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/remove_playlist"
+        android:title="@string/cm_remove_playlist"></item>
+    
+    <item
+        android:id="@+id/update_playlist"
+        android:title="@string/cm_update_playlist_name"></item>
+    
+</menu>
+<!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/menu/context_menu_remove_playlist.xml -->

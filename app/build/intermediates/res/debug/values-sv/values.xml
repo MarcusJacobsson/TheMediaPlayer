@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values-sv/arrays.xml -->
+    <eat-comment/>
+    <string-array name="color_array">
+        <item>Röd</item>
+        <item>Grön</item>
+        <item>Blå</item>
+        <item>Svart</item>
+        <item>Vit</item>
+    </string-array>
+    <string-array name="color_array_values">
+        <item>-65536</item>
+        <item>-16730112</item>
+        <item>-16776961</item>
+        <item>-16777216</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="text_size_array">
+        <item>Liten</item>
+        <item>Medium</item>
+        <item>Stor</item>
+    </string-array>
+    <string-array name="text_size_array_values">
+        <item>12</item>
+        <item>16</item>
+        <item>22</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values-sv/colors.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <color name="gc_background">#292929</color>
+    <color name="green">#00B800</color>
+    <color name="main_background">#070707</color>
+    <color name="white">#ffffff</color>
+    <color name="widget_background">#191919</color>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values-sv/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values-sv/strings.xml -->
+    <eat-comment/>
+    <string name="action_create_playlist">Skapa spellista</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="add_new_playlist_dialog_fragment_feedback">Must implement AddNewPlaylistDialogListener</string>
+    <string name="add_new_playlist_dialog_fragment_msg">Det fanns inga spellistor att lägga till låten i. Vill du skapa en spellista?</string>
+    <string name="add_new_playlist_dialog_fragment_negbtn">Nej</string>
+    <string name="add_new_playlist_dialog_fragment_posbtn">Ja</string>
+    <string name="add_new_playlist_dialog_fragment_title">Inga spellistor hittades.</string>
+    <string name="add_playlist_dialog_error_feedback">Must implement CreatePlaylistDialogListener</string>
+    <string name="add_playlist_dialog_et_name">Namn</string>
+    <string name="add_playlist_dialog_feedback">Vänligen ange namn för din spellista.</string>
+    <string name="add_playlist_dialog_negBtn">Avbryt</string>
+    <string name="add_playlist_dialog_posBtn">OK</string>
+    <string name="add_playlist_dialog_title">Skapa spellista</string>
+    <string name="add_playlist_user_feedback">La till spellista med namn</string>
+    <string name="add_song_to_playlist_dialog_fragment_error_feedback">Must implement AddSongToPlaylistDialogListener</string>
+    <string name="add_song_to_playlist_dialog_fragment_negBtn">Avbryt</string>
+    <string name="add_song_to_playlist_dialog_fragment_posBtn">OK</string>
+    <string name="add_song_to_playlist_dialog_fragment_title">Välj spellista</string>
+    <string name="add_song_to_playlist_success_feedback">Låten finns redan på den spellistan.</string>
+    <string name="add_song_to_playlist_user_feedback">La till låt till spellista</string>
+    <string name="add_track">Lägg till låt</string>
+    <string name="add_track_to_playlist_dialog_fragment_feedback_added">La till</string>
+    <string name="add_track_to_playlist_dialog_fragment_feedback_to">till spellista</string>
+    <string name="add_track_to_playlist_dialog_fragment_neg_btn">Avbryt</string>
+    <string name="add_track_to_playlist_dialog_fragment_title">Välj låt</string>
+    <string name="app_name">The Media Player</string>
+    <string name="cm_add_song_to_playlist">Lägg till i spellista</string>
+    <string name="cm_remove_playlist">Ta bort spellista</string>
+    <string name="cm_remove_song_from_playlist">Ta bort från spellista</string>
+    <string name="cm_update_playlist_name">Uppdatera namn</string>
+    <string name="cm_video_properties">Egenskaper</string>
+    <string name="cm_video_properties_dialog_date">Skapad</string>
+    <string name="cm_video_properties_dialog_duration">Längd</string>
+    <string name="cm_video_properties_dialog_file">Filnamn</string>
+    <string name="cm_video_properties_dialog_location">Plats</string>
+    <string name="cm_video_properties_dialog_resolution">Upplösning</string>
+    <string name="cm_video_properties_dialog_size">Storlek</string>
+    <string name="cm_video_properties_header_file">Fil</string>
+    <string name="cm_video_properties_header_media">Media</string>
+    <string name="cm_video_share">Dela</string>
+    <string name="cm_video_share_msg">Dela video med:</string>
+    <string name="cm_video_share_title">Kolla in denna videon!</string>
+    <string name="first_time_dialog_fragment_msg">Tack för att du laddade ner The Media Player. \n\nDu kan skapa en spellista från denna skärm, genom att trycka på knappen uppe i högra hörnet. Eller så kan du dra med ditt finger till vänster för att hitta alla dina musik- och videofiler. Enjoy.</string>
+    <string name="first_time_dialog_fragment_pos_btm">OK</string>
+    <string name="first_time_dialog_fragment_title">Välkommen!</string>
+    <string name="headings_music">musik</string>
+    <string name="headings_playlists">spellistor</string>
+    <string name="headings_video">video</string>
+    <string name="menu_play_song_share">Dela</string>
+    <string name="music_animation_preference_summary">Aktivera eller av-aktivera musikanimationen</string>
+    <string name="not_mounted_dialog_fragment_msg">Denna applikation fungerar inte utan ett monterat SD kort. Vänligen se efter att SD kortet är på plats och fungerar som det ska, sen försök igen.</string>
+    <string name="not_mounted_dialog_fragment_negbtn">OK</string>
+    <string name="not_mounted_dialog_fragment_title">Hittade inget SD kort</string>
+    <string name="notification_title">The Media Player</string>
+    <string name="option_menu_feedback">Skicka feedback</string>
+    <string name="play_song_activity_playlist">Spelar från spellista</string>
+    <string name="playlist_list_adapter_track">låt</string>
+    <string name="playlist_list_adapter_tracks">låtar</string>
+    <string name="playlist_total_duration">Total speltid:</string>
+    <string name="preferences_color_theme">Färgtema</string>
+    <string name="preferences_list_preferences">Listor</string>
+    <string name="preferences_list_preferences_text_size">Textstorlek i listor</string>
+    <string name="preferences_music_animation_preference_title">Aktivera animation</string>
+    <string name="preferences_music_animation_preferences">Musikanimation</string>
+    <string name="preferences_notification_preferences">Notifikation</string>
+    <string name="preferences_notification_preferences_title">Aktivera notifikation</string>
+    <string name="preferences_notification_preferences_warning">Varning: Att av-aktivera notifikationen kan resultera i oväntade beteenden och är inte rekomenderat.</string>
+    <string name="remove_playlist_dialog_fragment_error_feedback">Must implement RemovePlaylistDialogListener</string>
+    <string name="remove_playlist_dialog_fragment_msg">Är du säker?</string>
+    <string name="remove_playlist_dialog_fragment_negBtn">Avbryt</string>
+    <string name="remove_playlist_dialog_fragment_posBtn">Ja</string>
+    <string name="remove_playlist_dialog_fragment_title">Ta bort spellista</string>
+    <string name="remove_playlist_user_feedback">Tog bort spellista med namn</string>
+    <string name="remove_song_from_playlist_feedback">Tog bort låt.</string>
+    <string name="removed_song_from_database_dialog_fragment_msg">Låten som du efterfrågades kan inte hittas. Den har därför tagits bort.</string>
+    <string name="removed_song_from_database_dialog_fragment_negbtn">OK</string>
+    <string name="removed_song_from_database_dialog_fragment_title">Woops</string>
+    <string name="removed_song_from_playlist_dialog_fragment_msg">En låt som tidigare var en del av denna spellistan hittades inte på minnet, och har därför tagits bort från spellstan.</string>
+    <string name="removed_song_from_playlist_dialog_fragment_negBtn">OK</string>
+    <string name="removed_song_from_playlist_dialog_fragment_title">Woops</string>
+    <string name="removed_video_from_database_dialog_fragment_msg">En video som du efterfrågade hittades inte på minnet.</string>
+    <string name="removed_video_from_database_dialog_fragment_negbtn">OK</string>
+    <string name="removed_video_from_database_dialog_fragment_title">Woops</string>
+    <string name="repeat">Repetera</string>
+    <string name="search_hint">Sök…</string>
+    <string name="send_feedback_dialog_fragment_msg">All typ av feedback uppskattas.\nFungerar något konstigt eller märkligt på något sätt?\nHar du förslag på förbättringsmöjligheter?\nSkicka ett mail till mig, så ska jag kolla upp det.</string>
+    <string name="send_feedback_dialog_fragment_neg_btn">Inte nu</string>
+    <string name="send_feedback_dialog_fragment_pos_btn">Skriv ett mail</string>
+    <string name="send_feedback_dialog_fragment_title">Skicka feedback</string>
+    <string name="share_audio_msg_one">Kolla in denna låten:</string>
+    <string name="share_audio_msg_two">av</string>
+    <string name="share_audio_title">Välj app</string>
+    <string name="shuffle">Blanda</string>
+    <string name="update_playlist_dialog_current_name">Nuvarande namn:</string>
+    <string name="update_playlist_dialog_error_feedback">Must implement UpdatePlaylistDialogListener</string>
+    <string name="update_playlist_dialog_error_feedback_newname">Vänligen ange namn för din spellista.</string>
+    <string name="update_playlist_dialog_hint">Nytt namn</string>
+    <string name="update_playlist_dialog_negBtn">Avbryt</string>
+    <string name="update_playlist_dialog_posBtn">OK</string>
+    <string name="update_playlist_dialog_title">Uppdatera spellista</string>
+    <string name="update_playlist_name_user_feedback1">Uppdaterade spellista med namn</string>
+    <string name="update_playlist_name_user_feedback2">till</string>
+    <string name="update_playlist_success_feedback">Spellistan finns redan. Vänligen välj ett annat namn.</string>
+    <string name="video_properties_dialog_mb">MB</string>
+    <string name="video_properties_dialog_posBtn">OK</string>
+    <string name="youtube_url">http://www.youtube.com/</string>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values-sv/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="CustomDialog">
+    <item name="android:alertDialogStyle">@style/CustomDialogTheme</item>
+	</style>
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+    <item name="android:bottomBright">@color/white</item>
+    <item name="android:bottomDark">@color/white</item>
+    <item name="android:bottomMedium">@color/white</item>
+    <item name="android:centerBright">@color/white</item>
+    <item name="android:centerDark">@color/white</item>
+    <item name="android:centerMedium">@color/white</item>
+    <item name="android:fullBright">@color/green</item>
+    <item name="android:fullDark">@color/green</item>
+    <item name="android:topBright">@color/green</item>
+    <item name="android:topDark">@color/green</item>
+	</style>
+    <style name="MyDefaultTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyTheme">
+        <item name="@android:textAppearance">@style/MyDefaultTextAppearance</item>
+    </style>
+</resources>

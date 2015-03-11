@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="color_array">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="color_array_values">
+        <item>-65536</item>
+        <item>-16730112</item>
+        <item>-16776961</item>
+        <item>-16777216</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="text_size_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="text_size_array_values">
+        <item>12</item>
+        <item>16</item>
+        <item>22</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <color name="gc_background">#292929</color>
+    <color name="green">#00B800</color>
+    <color name="main_background">#070707</color>
+    <color name="white">#ffffff</color>
+    <color name="widget_background">#191919</color>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_create_playlist">Create playlist</string>
+    <string name="action_settings">Preferences</string>
+    <string name="add_new_playlist_dialog_fragment_feedback">Must implement AddNewPlaylistDialogListener</string>
+    <string name="add_new_playlist_dialog_fragment_msg">There was no playlists found to add your song to. Would you like to create one?</string>
+    <string name="add_new_playlist_dialog_fragment_negbtn">No</string>
+    <string name="add_new_playlist_dialog_fragment_posbtn">Yes</string>
+    <string name="add_new_playlist_dialog_fragment_title">No playlists found</string>
+    <string name="add_playlist_dialog_error_feedback">Must implement CreatePlaylistDialogListener</string>
+    <string name="add_playlist_dialog_et_name">Name</string>
+    <string name="add_playlist_dialog_feedback">Please make sure that you provide a name for your playlist.</string>
+    <string name="add_playlist_dialog_negBtn">Cancel</string>
+    <string name="add_playlist_dialog_posBtn">OK</string>
+    <string name="add_playlist_dialog_title">Create a playlist</string>
+    <string name="add_playlist_user_feedback">Added playlist with the name</string>
+    <string name="add_song_to_playlist_dialog_fragment_error_feedback">Must implement AddSongToPlaylistDialogListener</string>
+    <string name="add_song_to_playlist_dialog_fragment_negBtn">Cancel</string>
+    <string name="add_song_to_playlist_dialog_fragment_posBtn">OK</string>
+    <string name="add_song_to_playlist_dialog_fragment_title">Select playlist</string>
+    <string name="add_song_to_playlist_success_feedback">The song already exists on that playlist.</string>
+    <string name="add_song_to_playlist_user_feedback">Added song to playlist</string>
+    <string name="add_track">Add track</string>
+    <string name="add_track_to_playlist_dialog_fragment_feedback_added">Added</string>
+    <string name="add_track_to_playlist_dialog_fragment_feedback_to">to playlist</string>
+    <string name="add_track_to_playlist_dialog_fragment_neg_btn">Cancel</string>
+    <string name="add_track_to_playlist_dialog_fragment_title">Choose track</string>
+    <string name="app_name">The Media Player</string>
+    <string name="cm_add_song_to_playlist">Add to playlist</string>
+    <string name="cm_remove_playlist">Remove playlist</string>
+    <string name="cm_remove_song_from_playlist">Remove from playlist</string>
+    <string name="cm_update_playlist_name">Update name</string>
+    <string name="cm_video_properties">Properties</string>
+    <string name="cm_video_properties_dialog_date">Created</string>
+    <string name="cm_video_properties_dialog_duration">Duration</string>
+    <string name="cm_video_properties_dialog_file">File name</string>
+    <string name="cm_video_properties_dialog_location">Location</string>
+    <string name="cm_video_properties_dialog_resolution">Resolution</string>
+    <string name="cm_video_properties_dialog_size">Size</string>
+    <string name="cm_video_properties_header_file">File</string>
+    <string name="cm_video_properties_header_media">Media</string>
+    <string name="cm_video_share">Share</string>
+    <string name="cm_video_share_msg">Share video with:</string>
+    <string name="cm_video_share_title">Check out this cool video!</string>
+    <string name="first_time_dialog_fragment_msg">Thank you for downloading The Media Player. \n\nYou can create a playlist from this screen by clicking the add
+	    playlist button up in the right corner, or you can swipe to the right to find all your music and video files. Enjoy.</string>
+    <string name="first_time_dialog_fragment_pos_btm">Got it!</string>
+    <string name="first_time_dialog_fragment_title">Welcome!</string>
+    <string name="headings_music">music</string>
+    <string name="headings_playlists">playlists</string>
+    <string name="headings_video">video</string>
+    <string name="menu_play_song_share">Share</string>
+    <string name="music_animation_preference_summary">Enable or disable the music visualization</string>
+    <string name="not_mounted_dialog_fragment_msg">This application will not work without a mounted SD card. Please make sure that your SD card is mounted and properly working.</string>
+    <string name="not_mounted_dialog_fragment_negbtn">OK</string>
+    <string name="not_mounted_dialog_fragment_title">No SD card found</string>
+    <string name="notification_title">The Media Player</string>
+    <string name="option_menu_feedback">Send feedback</string>
+    <string name="play_song_activity_playlist">Playing from playlist</string>
+    <string name="playlist_list_adapter_track">track</string>
+    <string name="playlist_list_adapter_tracks">tracks</string>
+    <string name="playlist_total_duration">Total playlist duration:</string>
+    <string name="preferences_color_theme">Color Theme</string>
+    <string name="preferences_list_preferences">List Preferences</string>
+    <string name="preferences_list_preferences_text_size">List Text Size</string>
+    <string name="preferences_music_animation_preference_title">Enable animation</string>
+    <string name="preferences_music_animation_preferences">Music Animation</string>
+    <string name="preferences_notification_preferences">Notification Preferences</string>
+    <string name="preferences_notification_preferences_title">Enable Notification</string>
+    <string name="preferences_notification_preferences_warning">Warning: Disabling the notification can result in misbehaviour of the app and is discouraged.</string>
+    <string name="remove_playlist_dialog_fragment_error_feedback">Must implement RemovePlaylistDialogListener</string>
+    <string name="remove_playlist_dialog_fragment_msg">Are you sure?</string>
+    <string name="remove_playlist_dialog_fragment_negBtn">Cancel</string>
+    <string name="remove_playlist_dialog_fragment_posBtn">Yes</string>
+    <string name="remove_playlist_dialog_fragment_title">Remove playlist</string>
+    <string name="remove_playlist_user_feedback">Removed playlist with the name</string>
+    <string name="remove_song_from_playlist_feedback">Song removed.</string>
+    <string name="removed_song_from_database_dialog_fragment_msg">A song that you requested was no longer found on the storage, and was therefore removed. Sorry!</string>
+    <string name="removed_song_from_database_dialog_fragment_negbtn">OK</string>
+    <string name="removed_song_from_database_dialog_fragment_title">Woops</string>
+    <string name="removed_song_from_playlist_dialog_fragment_msg">A song that was previously a part of this playlist was not found on the storage. The song was therefore removed. Sorry!</string>
+    <string name="removed_song_from_playlist_dialog_fragment_negBtn">OK</string>
+    <string name="removed_song_from_playlist_dialog_fragment_title">Woops</string>
+    <string name="removed_video_from_database_dialog_fragment_msg">A video that you requested was no longer found on the storage, and was therefore removed. Sorry!</string>
+    <string name="removed_video_from_database_dialog_fragment_negbtn">OK</string>
+    <string name="removed_video_from_database_dialog_fragment_title">Woops</string>
+    <string name="repeat">Repeat</string>
+    <string name="search_hint">Search…</string>
+    <string name="send_feedback_dialog_fragment_msg">Any type feedback is appreciated.\nIs anything not working as you intend it to?\nDo you have any suggestion for improvement?\nSend me a mail and I\'ll look into it asap.</string>
+    <string name="send_feedback_dialog_fragment_neg_btn">Not now</string>
+    <string name="send_feedback_dialog_fragment_pos_btn">Write mail</string>
+    <string name="send_feedback_dialog_fragment_title">Send feedback</string>
+    <string name="share_audio_msg_one">Check out this awesome song I\'m listening to:</string>
+    <string name="share_audio_msg_two">by</string>
+    <string name="share_audio_title">Choose an app</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="update_playlist_dialog_current_name">Current name:</string>
+    <string name="update_playlist_dialog_error_feedback">Must implement UpdatePlaylistDialogListener</string>
+    <string name="update_playlist_dialog_error_feedback_newname">Please make sure that you provide a new name for your playlist.</string>
+    <string name="update_playlist_dialog_hint">New playlist name</string>
+    <string name="update_playlist_dialog_negBtn">Cancel</string>
+    <string name="update_playlist_dialog_posBtn">OK</string>
+    <string name="update_playlist_dialog_title">Update playlist</string>
+    <string name="update_playlist_name_user_feedback1">Updated playlist name from</string>
+    <string name="update_playlist_name_user_feedback2">to</string>
+    <string name="update_playlist_success_feedback">Could not update playlist because it already exsits. Please choose a different name.</string>
+    <string name="video_properties_dialog_mb">MB</string>
+    <string name="video_properties_dialog_posBtn">OK</string>
+    <string name="youtube_url">http://www.youtube.com/</string>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="CustomDialog">
+    <item name="android:alertDialogStyle">@style/CustomDialogTheme</item>
+	</style>
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+    <item name="android:bottomBright">@color/white</item>
+    <item name="android:bottomDark">@color/white</item>
+    <item name="android:bottomMedium">@color/white</item>
+    <item name="android:centerBright">@color/white</item>
+    <item name="android:centerDark">@color/white</item>
+    <item name="android:centerMedium">@color/white</item>
+    <item name="android:fullBright">@color/green</item>
+    <item name="android:fullDark">@color/green</item>
+    <item name="android:topBright">@color/green</item>
+    <item name="android:topDark">@color/green</item>
+	</style>
+    <style name="MyDefaultTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyTheme">
+        <item name="@android:textAppearance">@style/MyDefaultTextAppearance</item>
+    </style>
+</resources>

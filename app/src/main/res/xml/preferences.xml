@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="-16730112"
+        android:entries="@array/color_array"
+        android:entryValues="@array/color_array_values"
+        android:key="txtColor"
+        android:title="@string/preferences_color_theme" />
+    <PreferenceScreen
+        android:key="button_list_preferences_category_key"
+        android:title="@string/preferences_list_preferences" >
+        <ListPreference
+            android:defaultValue="16"
+            android:entries="@array/text_size_array"
+            android:entryValues="@array/text_size_array_values"
+            android:key="txtSize"
+            android:title="@string/preferences_list_preferences_text_size" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="button_notification_preferences_category_key"
+        android:title="@string/preferences_notification_preferences" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notificationEnabled"
+            android:title="@string/preferences_notification_preferences_title" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="button_music_animation_preferences_category_key"
+        android:title="@string/preferences_music_animation_preferences" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="animationEnabled"
+            android:title="@string/preferences_music_animation_preference_title" />
+    </PreferenceScreen>
+
+</PreferenceScreen>
