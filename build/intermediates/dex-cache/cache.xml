@@ -16,6 +16,13 @@
         <dex dex="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer - Copy - Copy2\app\build\intermediates\pre-dexed\debug\classes-5c1dd260f100e854487a8f9bab0ccf192ada9ac1.jar" />
     </item>
     <item
+        jar="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer git\app\build\intermediates\exploded-aar\com.ToxicBakery.viewpager.transforms\view-pager-transforms\1.1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1d48c363ce7c087386d2cb6ecf8342fa399d2757">
+        <dex dex="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer git\app\build\intermediates\pre-dexed\debug\classes-d1983ab66928ef00d7ba865b4f190530f2161c3c.jar" />
+    </item>
+    <item
         jar="C:\Program Files (x86)\Android Studio SDK\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -23,11 +30,25 @@
         <dex dex="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer - Copy - Copy2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-50c1da07d9a3cedc45f316f25b0e75c1aa62a9dd.jar" />
     </item>
     <item
+        jar="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer git\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer git\app\build\intermediates\pre-dexed\debug\classes-160f0be512043b26cd0d3a06cf71a372afbd47e1.jar" />
+    </item>
+    <item
         jar="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer - Copy - Copy2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer - Copy - Copy2\app\build\intermediates\pre-dexed\debug\classes-502be6386f44f6501e50acb89a86f49d75f4f4a2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer git\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Marcus Jacobsson\Dropbox\Development\Android Studio Workspace\TheMediaPlayer git\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-7889d6d48e869c59cf3486cf835d229c156e8aa2.jar" />
     </item>
 
 </items>

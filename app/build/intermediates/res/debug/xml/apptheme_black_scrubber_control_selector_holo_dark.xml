@@ -20,4 +20,4 @@
     <item android:state_selected="true" android:drawable="@drawable/apptheme_black_scrubber_control_focused_holo" />
     <item android:drawable="@drawable/apptheme_black_scrubber_control_normal_holo" />
 </selector>
-<!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/xml/apptheme_black_scrubber_control_selector_holo_dark.xml -->
+<!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/src/main/res/xml/apptheme_black_scrubber_control_selector_holo_dark.xml -->
