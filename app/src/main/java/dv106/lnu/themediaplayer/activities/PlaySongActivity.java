@@ -9,7 +9,10 @@ import android.content.SharedPreferences;
 import android.database.SQLException;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
 import android.graphics.Rect;
+import android.graphics.drawable.LayerDrawable;
+import android.graphics.drawable.ScaleDrawable;
 import android.media.audiofx.Visualizer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,6 +29,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
@@ -133,9 +137,9 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
     private void setUpTheme() {
         SharedPreferences sharedPref = PreferenceManager
                 .getDefaultSharedPreferences(this);
-        String txtColorString = sharedPref.getString(
-                PreferencesActivity.KEY_PREF_TXT_COLOR, "");
-        int txtColor = Integer.parseInt(txtColorString);
+        int txtColor = sharedPref.getInt(
+                PreferencesActivity.KEY_PREF_TXT_COLOR, 1);
+
         tvArtist.setTextColor(txtColor);
         tvCurrentProgress.setTextColor(txtColor);
         tvPlaylist.setTextColor(txtColor);
@@ -143,49 +147,14 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
         tvShuffle.setTextColor(txtColor);
         tvTitle.setTextColor(txtColor);
         tvTotalProgress.setTextColor(txtColor);
+        setProgressBarColor(sbProgress, txtColor);
+    }
 
-        switch (txtColor) {
-            case -65536: // red
-                sbProgress.setProgressDrawable(getResources().getDrawable(
-                        R.xml.apptheme_red_scrubber_progress_horizontal_holo_dark));
-                sbProgress.setThumb(getResources().getDrawable(
-                        R.xml.apptheme_red_scrubber_control_selector_holo_dark));
-                break;
-
-            case -16730112: // green
-                sbProgress.setProgressDrawable(getResources().getDrawable(
-                        R.xml.apptheme_scrubber_progress_horizontal_holo_dark));
-                sbProgress.setThumb(getResources().getDrawable(
-                        R.xml.apptheme_scrubber_control_selector_holo_dark));
-                break;
-
-            case -16776961: // blue
-                sbProgress
-                        .setProgressDrawable(getResources()
-                                .getDrawable(
-                                        R.xml.apptheme_blue_scrubber_progress_horizontal_holo_dark));
-                sbProgress.setThumb(getResources().getDrawable(
-                        R.xml.apptheme_blue_scrubber_control_selector_holo_dark));
-                break;
-
-            case -16777216: // black
-                sbProgress
-                        .setProgressDrawable(getResources()
-                                .getDrawable(
-                                        R.xml.apptheme_black_scrubber_progress_horizontal_holo_dark));
-                sbProgress.setThumb(getResources().getDrawable(
-                        R.xml.apptheme_black_scrubber_control_selector_holo_dark));
-                break;
-
-            case -1: // white
-                sbProgress
-                        .setProgressDrawable(getResources()
-                                .getDrawable(
-                                        R.xml.apptheme_white_scrubber_progress_horizontal_holo_dark));
-                sbProgress.setThumb(getResources().getDrawable(
-                        R.xml.apptheme_white_scrubber_control_selector_holo_dark));
-                break;
-        }
+    public void setProgressBarColor(ProgressBar progressBar, int newColor) {
+        LayerDrawable ld = (LayerDrawable) progressBar.getProgressDrawable().getCurrent();
+        ScaleDrawable d1 = (ScaleDrawable) ld.findDrawableByLayerId(android.R.id.progress);
+        d1.setColorFilter(newColor, PorterDuff.Mode.SRC_IN);
+        sbProgress.getThumb().setColorFilter(newColor, PorterDuff.Mode.SRC_IN);
     }
 
     @Override
@@ -196,6 +165,7 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
 
     @Override
     protected void onResume() {
+
         if (service != null && !service.isPlaying()) {
             btnPlayPause.setImageDrawable(getResources().getDrawable(
                     R.drawable.ic_action_play_over_video));
@@ -220,6 +190,10 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
             } else {
                 tvShuffle.setText("");
             }
+        }
+
+        if(service != null && service.isPlaying()){
+            initSeekBar(service.getCurrentPosition());
         }
 
         super.onResume();
@@ -359,7 +333,7 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
                     + " " + playlist);
         } else {
             this.playlist = null;
-            tvPlaylist.setText(playlist);
+            tvPlaylist.setText("");
         }
         Song tmpSong = null;
         try {
@@ -397,6 +371,10 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
     protected void onPause() {
         if (mVisualizer != null)
             mVisualizer.setEnabled(false);
+
+        if(sbCountDown != null){
+            sbCountDown.cancel();
+        }
         super.onPause();
     }
 
@@ -413,8 +391,9 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
             sbCountDown.cancel();
         sbCountDown = new CountDownTimer(currentTime, 1000) {
             public void onTick(long millisUntilFinished) {
+                System.out.println("tick");
                 int pos = service.getCurrentPosition();
-                if(pos != -1){
+                if (pos != -1) {
                     String progress = MediaPlayerTimeUtil.formatMillisecond(pos);
                     tvCurrentProgress.setText(progress);
                     sbProgress.setProgress(pos);
@@ -508,7 +487,7 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
         }
         editor.putBoolean("isRepeat", isRepeat);
         editor.putBoolean("isShuffle", isShuffle);
-        editor.commit();
+        editor.apply();
     }
 
     private void setShuffle() {
@@ -534,11 +513,11 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
         }
         editor.putBoolean("isRepeat", isRepeat);
         editor.putBoolean("isShuffle", isShuffle);
-        editor.commit();
+        editor.apply();
     }
 
 	/*
-	 * PlaySongActivity commands to the SongService
+     * PlaySongActivity commands to the SongService
 	 */
 
     private void playRandomSong() {
@@ -669,9 +648,15 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
         if (state == 0) {
             btnPlayPause.setImageDrawable(getResources().getDrawable(
                     R.drawable.ic_action_play_over_video));
+            if(sbCountDown != null){
+                sbCountDown.cancel();
+            }
         } else if (state == 1) {
             btnPlayPause.setImageDrawable(getResources().getDrawable(
                     R.drawable.ic_action_pause_over_video));
+            if(service != null){
+                initSeekBar(service.getCurrentPosition());
+            }
         }
     }
 
@@ -806,9 +791,8 @@ public class PlaySongActivity extends FragmentActivity implements OnClickListene
 
             SharedPreferences sharedPref = PreferenceManager
                     .getDefaultSharedPreferences(getContext());
-            String txtColorString = sharedPref.getString(
-                    PreferencesActivity.KEY_PREF_TXT_COLOR, "");
-            int txtColor = Integer.parseInt(txtColorString);
+            int txtColor = sharedPref.getInt(
+                    PreferencesActivity.KEY_PREF_TXT_COLOR, 1);
 
             mForePaint.setStrokeWidth(1f);
             mForePaint.setAntiAlias(true);

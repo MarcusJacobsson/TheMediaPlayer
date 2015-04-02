@@ -3,7 +3,6 @@ package dv106.lnu.themediaplayer.widgetprovider;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,7 +11,7 @@ import android.graphics.Canvas;
 import android.preference.PreferenceManager;
 import android.widget.RemoteViews;
 
-import dv106.lnu.themediaplayer.MainActivity;
+import dv106.lnu.themediaplayer.activities.MainActivity;
 import dv106.lnu.themediaplayer.R;
 import dv106.lnu.themediaplayer.preferences.PreferencesActivity;
 import dv106.lnu.themediaplayer.service.SongService;
@@ -40,9 +39,8 @@ public class SongAppWidgetProvider extends AppWidgetProvider {
             //Color theme
             SharedPreferences sharedPref = PreferenceManager
                     .getDefaultSharedPreferences(context);
-            String txtColorString = sharedPref.getString(
-                    PreferencesActivity.KEY_PREF_TXT_COLOR, "");
-            int txtColor = Integer.parseInt(txtColorString);
+            int txtColor = sharedPref.getInt(
+                    PreferencesActivity.KEY_PREF_TXT_COLOR, 1);
             Bitmap b = Bitmap.createBitmap(2, 2, Bitmap.Config.ARGB_8888);
             Canvas c = new Canvas(b);
             c.drawColor(txtColor);

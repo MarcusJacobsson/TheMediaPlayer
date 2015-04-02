@@ -35,7 +35,9 @@ ADDED from AndroidManifest.xml:12:5
 		ADDED from AndroidManifest.xml:12:22
 application
 ADDED from AndroidManifest.xml:14:5
-MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+MERGED from com.astuetz:pagerslidingtabstrip:1.0.1:4:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
 	android:label
 		ADDED from AndroidManifest.xml:17:9
 	android:allowBackup
@@ -44,7 +46,7 @@ MERGED from com.android.support:support-v4:21.0.3:16:5
 		ADDED from AndroidManifest.xml:16:9
 	android:theme
 		ADDED from AndroidManifest.xml:18:9
-activity#dv106.lnu.themediaplayer.MainActivity
+activity#dv106.lnu.themediaplayer.activities.MainActivity
 ADDED from AndroidManifest.xml:20:9
 	android:name
 		ADDED from AndroidManifest.xml:20:19
@@ -108,8 +110,11 @@ ADDED from AndroidManifest.xml:47:13
 		ADDED from AndroidManifest.xml:48:17
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
-MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
 MERGED from com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.1.0:23:5
+MERGED from com.astuetz:pagerslidingtabstrip:1.0.1:2:5
+MERGED from com.android.support:support-v4:22.0.0:20:5
+MERGED from com.larswerkman:HoloColorPicker:1.5:5:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0

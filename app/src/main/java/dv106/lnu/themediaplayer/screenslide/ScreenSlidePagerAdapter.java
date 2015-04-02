@@ -24,4 +24,24 @@ public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 	public int getCount() {
 		return this.fragments.size();
 	}
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        super.getPageTitle(position);
+        String title = "";
+        switch (position){
+            case 0:
+                title = "playlist";
+            break;
+
+            case 1:
+                title = "music";
+            break;
+
+            case 2:
+                title = "video";
+            break;
+        }
+        return title;
+    }
 }

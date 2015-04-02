@@ -69,10 +69,10 @@ public class PlaylistListAdapter extends ArrayAdapter<String> {
 		/* prefs */
 		SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getContext());
 		String txtSize = sharedPref.getString(PreferencesActivity.KEY_PREF_TXT_SIZE, "");
-		String txtColor = sharedPref.getString(PreferencesActivity.KEY_PREF_TXT_COLOR, "");
-		tvPlaylistName.setTextColor(Integer.parseInt(txtColor));
+		int txtColor = sharedPref.getInt(PreferencesActivity.KEY_PREF_TXT_COLOR, 1);
+		tvPlaylistName.setTextColor(txtColor);
 		tvPlaylistName.setTextSize(Float.parseFloat(txtSize));
-		tvPlaylistTracks.setTextColor(Integer.parseInt(txtColor));
+		tvPlaylistTracks.setTextColor(txtColor);
 		tvPlaylistTracks.setTextSize(Float.parseFloat(txtSize));
 
         Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.push_left_in);

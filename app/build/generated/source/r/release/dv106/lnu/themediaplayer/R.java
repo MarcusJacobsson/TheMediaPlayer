@@ -28,158 +28,349 @@ public final class R {
         public static final int text_size_array_values=0x7f060003;
     }
     public static final class attr {
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_length=0x7f010001;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_orientation_horizontal=0x7f010004;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_pointer_halo_radius=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_pointer_radius=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bar_thickness=0x7f010000;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_center_halo_radius=0x7f010008;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_center_radius=0x7f010007;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_pointer_halo_radius=0x7f01000a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_pointer_radius=0x7f010009;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_wheel_radius=0x7f010005;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color_wheel_thickness=0x7f010006;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsDividerColor=0x7f01000d;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsDividerPadding=0x7f010010;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsIndicatorColor=0x7f01000b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsIndicatorHeight=0x7f01000e;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsScrollOffset=0x7f010012;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsShouldExpand=0x7f010014;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int pstsTabBackground=0x7f010013;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTabPaddingLeftRight=0x7f010011;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTextAllCaps=0x7f010015;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineColor=0x7f01000c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineHeight=0x7f01000f;
     }
     public static final class color {
-        public static final int black=0x7f070000;
-        public static final int gc_background=0x7f070001;
-        public static final int green=0x7f070002;
-        public static final int main_background=0x7f070003;
-        public static final int white=0x7f070004;
-        public static final int widget_background=0x7f070005;
+        public static final int background_tab_pressed=0x7f070000;
+        public static final int black=0x7f070001;
+        public static final int gc_background=0x7f070002;
+        public static final int green=0x7f070003;
+        public static final int main_background=0x7f070004;
+        public static final int white=0x7f070005;
+        public static final int widget_background=0x7f070006;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f080000;
         public static final int activity_vertical_margin=0x7f080001;
+        public static final int bar_length=0x7f080002;
+        public static final int bar_pointer_halo_radius=0x7f080003;
+        public static final int bar_pointer_radius=0x7f080004;
+        public static final int bar_thickness=0x7f080005;
+        public static final int color_center_halo_radius=0x7f080006;
+        public static final int color_center_radius=0x7f080007;
+        public static final int color_pointer_halo_radius=0x7f080008;
+        public static final int color_pointer_radius=0x7f080009;
+        public static final int color_wheel_radius=0x7f08000a;
+        public static final int color_wheel_thickness=0x7f08000b;
     }
     public static final class drawable {
-        public static final int apptheme_black_scrubber_control_disabled_holo=0x7f020000;
-        public static final int apptheme_black_scrubber_control_focused_holo=0x7f020001;
-        public static final int apptheme_black_scrubber_control_normal_holo=0x7f020002;
-        public static final int apptheme_black_scrubber_control_pressed_holo=0x7f020003;
-        public static final int apptheme_black_scrubber_primary_holo=0x7f020004;
-        public static final int apptheme_black_scrubber_secondary_holo=0x7f020005;
-        public static final int apptheme_black_scrubber_track_holo_dark=0x7f020006;
-        public static final int apptheme_blue_scrubber_control_disabled_holo=0x7f020007;
-        public static final int apptheme_blue_scrubber_control_focused_holo=0x7f020008;
-        public static final int apptheme_blue_scrubber_control_normal_holo=0x7f020009;
-        public static final int apptheme_blue_scrubber_control_pressed_holo=0x7f02000a;
-        public static final int apptheme_blue_scrubber_primary_holo=0x7f02000b;
-        public static final int apptheme_blue_scrubber_secondary_holo=0x7f02000c;
-        public static final int apptheme_blue_scrubber_track_holo_dark=0x7f02000d;
-        public static final int apptheme_red_scrubber_control_disabled_holo=0x7f02000e;
-        public static final int apptheme_red_scrubber_control_focused_holo=0x7f02000f;
-        public static final int apptheme_red_scrubber_control_normal_holo=0x7f020010;
-        public static final int apptheme_red_scrubber_control_pressed_holo=0x7f020011;
-        public static final int apptheme_red_scrubber_primary_holo=0x7f020012;
-        public static final int apptheme_red_scrubber_secondary_holo=0x7f020013;
-        public static final int apptheme_red_scrubber_track_holo_dark=0x7f020014;
-        public static final int apptheme_scrubber_control_disabled_holo=0x7f020015;
-        public static final int apptheme_scrubber_control_focused_holo=0x7f020016;
-        public static final int apptheme_scrubber_control_normal_holo=0x7f020017;
-        public static final int apptheme_scrubber_control_pressed_holo=0x7f020018;
-        public static final int apptheme_scrubber_primary_holo=0x7f020019;
-        public static final int apptheme_scrubber_secondary_holo=0x7f02001a;
-        public static final int apptheme_scrubber_track_holo_dark=0x7f02001b;
-        public static final int apptheme_white_scrubber_control_disabled_holo=0x7f02001c;
-        public static final int apptheme_white_scrubber_control_focused_holo=0x7f02001d;
-        public static final int apptheme_white_scrubber_control_normal_holo=0x7f02001e;
-        public static final int apptheme_white_scrubber_control_pressed_holo=0x7f02001f;
-        public static final int apptheme_white_scrubber_primary_holo=0x7f020020;
-        public static final int apptheme_white_scrubber_secondary_holo=0x7f020021;
-        public static final int apptheme_white_scrubber_track_holo_dark=0x7f020022;
-        public static final int ic_action_add_to_queue=0x7f020023;
-        public static final int ic_action_next_item=0x7f020024;
-        public static final int ic_action_pause_over_video=0x7f020025;
-        public static final int ic_action_play_over_video=0x7f020026;
-        public static final int ic_action_previous_item=0x7f020027;
-        public static final int ic_action_repeat=0x7f020028;
-        public static final int ic_action_search=0x7f020029;
-        public static final int ic_action_shuffle=0x7f02002a;
-        public static final int ic_launcher=0x7f02002b;
-        public static final int tmp_widget_prev=0x7f02002c;
-        public static final int utubetransp2=0x7f02002d;
+        public static final int apptheme_scrubber_control_disabled_holo=0x7f020000;
+        public static final int apptheme_scrubber_control_focused_holo=0x7f020001;
+        public static final int apptheme_scrubber_control_normal_holo=0x7f020002;
+        public static final int apptheme_scrubber_control_pressed_holo=0x7f020003;
+        public static final int apptheme_scrubber_primary_holo=0x7f020004;
+        public static final int apptheme_scrubber_secondary_holo=0x7f020005;
+        public static final int apptheme_scrubber_track_holo_dark=0x7f020006;
+        public static final int background_tab=0x7f020007;
+        public static final int ic_action_add_to_queue=0x7f020008;
+        public static final int ic_action_next_item=0x7f020009;
+        public static final int ic_action_pause_over_video=0x7f02000a;
+        public static final int ic_action_play_over_video=0x7f02000b;
+        public static final int ic_action_previous_item=0x7f02000c;
+        public static final int ic_action_repeat=0x7f02000d;
+        public static final int ic_action_search=0x7f02000e;
+        public static final int ic_action_shuffle=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int tmp_widget_prev=0x7f020011;
+        public static final int utubetransp2=0x7f020012;
     }
     public static final class id {
-        public static final int LayoutViewVisualizer=0x7f0c000b;
-        public static final int LinearLayout01=0x7f0c0018;
-        public static final int LinearLayout1=0x7f0c0001;
+        public static final int LayoutViewVisualizer=0x7f0c0008;
+        public static final int LinearLayout01=0x7f0c0016;
+        public static final int LinearLayout1=0x7f0c000e;
+        public static final int LinearLayout2=0x7f0c0025;
         public static final int RelativeLayout1=0x7f0c0000;
-        public static final int action_create_playlist=0x7f0c0056;
-        public static final int action_feedback=0x7f0c0057;
-        public static final int action_settings=0x7f0c0055;
-        public static final int add_to_playlist=0x7f0c004f;
-        public static final int btnPlaySongNext=0x7f0c0016;
-        public static final int btnPlaySongPlayPause=0x7f0c0015;
-        public static final int btnPlaySongPrevious=0x7f0c0014;
-        public static final int btnPlaySongRepeat=0x7f0c0013;
-        public static final int btnPlaySongShuffle=0x7f0c0017;
-        public static final int btnShowPlaylistAddTrack=0x7f0c001c;
-        public static final int content=0x7f0c003c;
-        public static final int etCreatePlaylistName=0x7f0c0027;
-        public static final int etSearchMusic=0x7f0c003d;
-        public static final int etSearchPlaylist=0x7f0c0040;
-        public static final int etSearchVideo=0x7f0c0044;
-        public static final int etUpdatePlaylistDialogNewName=0x7f0c0029;
-        public static final int ibAddPlaylist=0x7f0c0042;
-        public static final int ibAppWidgetNext=0x7f0c0026;
-        public static final int ibAppWidgetPlayPause=0x7f0c0025;
-        public static final int ibAppWidgetPrevious=0x7f0c0024;
-        public static final int ibGlobalControlPlayPause=0x7f0c0009;
-        public static final int ibSearchMusic=0x7f0c003e;
-        public static final int ibSearchPlaylist=0x7f0c0041;
-        public static final int ibSearchVideo=0x7f0c0045;
-        public static final int imageView1=0x7f0c001f;
-        public static final int ivAppWidgetHS=0x7f0c0023;
-        public static final int ivAppWidgetVS=0x7f0c0020;
-        public static final int ivListItemVideoThumbnail=0x7f0c004c;
-        public static final int llGlobalControl=0x7f0c0006;
-        public static final int lwMusic=0x7f0c003f;
-        public static final int lwPlaylists=0x7f0c0043;
-        public static final int lwShowPlaylist=0x7f0c001d;
-        public static final int lwVideos=0x7f0c0046;
-        public static final int menu_play_song_add_to_playlist=0x7f0c0059;
-        public static final int menu_play_song_share=0x7f0c0058;
-        public static final int pager=0x7f0c0005;
-        public static final int remove_from_playlist=0x7f0c0052;
-        public static final int remove_playlist=0x7f0c0050;
-        public static final int sbPlaySongSeekBar=0x7f0c0010;
-        public static final int tableRow1=0x7f0c0030;
-        public static final int tableRow2=0x7f0c0033;
-        public static final int tableRow3=0x7f0c0036;
-        public static final int tableRow4=0x7f0c0039;
-        public static final int tableRow5=0x7f0c002a;
-        public static final int tableRow6=0x7f0c002d;
-        public static final int textView13=0x7f0c002e;
-        public static final int textView3=0x7f0c0031;
-        public static final int textView4=0x7f0c0034;
-        public static final int textView5=0x7f0c0037;
-        public static final int textView6=0x7f0c003a;
-        public static final int textView7=0x7f0c002b;
-        public static final int tvAppWidgetArtist=0x7f0c0022;
-        public static final int tvAppWidgetTitle=0x7f0c0021;
-        public static final int tvGlobalControlArtist=0x7f0c0008;
-        public static final int tvGlobalControlTitle=0x7f0c0007;
-        public static final int tvHeadingPlaylists=0x7f0c0002;
-        public static final int tvHeadingsMusic=0x7f0c0003;
-        public static final int tvHeadingsVideo=0x7f0c0004;
-        public static final int tvListItemVideoDuration=0x7f0c004e;
-        public static final int tvListItemVideoTitle=0x7f0c004d;
-        public static final int tvMusicListItemArtist=0x7f0c0048;
-        public static final int tvMusicListItemDuration=0x7f0c0049;
-        public static final int tvMusicListItemTitle=0x7f0c0047;
-        public static final int tvPlaySongArtist=0x7f0c000d;
-        public static final int tvPlaySongCurrentTime=0x7f0c000e;
-        public static final int tvPlaySongPlaylist=0x7f0c000a;
-        public static final int tvPlaySongRepeat=0x7f0c0011;
-        public static final int tvPlaySongShuffle=0x7f0c0012;
-        public static final int tvPlaySongTitle=0x7f0c000c;
-        public static final int tvPlaySongTotalTime=0x7f0c000f;
-        public static final int tvPlaylistListItemName=0x7f0c004a;
-        public static final int tvPlaylistListItemNumberOfTracks=0x7f0c004b;
-        public static final int tvShowPlaylistName=0x7f0c001a;
-        public static final int tvShowPlaylistTotalDuration=0x7f0c001b;
-        public static final int tvUpdatePlaylistDialogCurrentName=0x7f0c0028;
-        public static final int tvVideoPropertiesCreateDate=0x7f0c003b;
-        public static final int tvVideoPropertiesDuration=0x7f0c002c;
-        public static final int tvVideoPropertiesFileDisplayName=0x7f0c0032;
-        public static final int tvVideoPropertiesLocation=0x7f0c0038;
-        public static final int tvVideoPropertiesResolution=0x7f0c002f;
-        public static final int tvVideoPropertiesSize=0x7f0c0035;
-        public static final int update_playlist=0x7f0c0051;
-        public static final int video_properties=0x7f0c0053;
-        public static final int video_share=0x7f0c0054;
-        public static final int vwPlayVideo=0x7f0c0019;
-        public static final int widget_layout=0x7f0c001e;
+        public static final int action_create_playlist=0x7f0c0058;
+        public static final int action_feedback=0x7f0c0059;
+        public static final int action_settings=0x7f0c0057;
+        public static final int add_to_playlist=0x7f0c0051;
+        public static final int btnPlaySongNext=0x7f0c0014;
+        public static final int btnPlaySongPlayPause=0x7f0c0013;
+        public static final int btnPlaySongPrevious=0x7f0c0012;
+        public static final int btnPlaySongRepeat=0x7f0c0011;
+        public static final int btnPlaySongShuffle=0x7f0c0015;
+        public static final int btnShowPlaylistAddTrack=0x7f0c001a;
+        public static final int content=0x7f0c003e;
+        public static final int etCreatePlaylistName=0x7f0c0029;
+        public static final int etSearchMusic=0x7f0c003f;
+        public static final int etSearchPlaylist=0x7f0c0042;
+        public static final int etSearchVideo=0x7f0c0046;
+        public static final int etUpdatePlaylistDialogNewName=0x7f0c002b;
+        public static final int ibAddPlaylist=0x7f0c0044;
+        public static final int ibAppWidgetNext=0x7f0c0024;
+        public static final int ibAppWidgetPlayPause=0x7f0c0023;
+        public static final int ibAppWidgetPrevious=0x7f0c0022;
+        public static final int ibGlobalControlPlayPause=0x7f0c0006;
+        public static final int ibSearchMusic=0x7f0c0040;
+        public static final int ibSearchPlaylist=0x7f0c0043;
+        public static final int ibSearchVideo=0x7f0c0047;
+        public static final int imageView1=0x7f0c001d;
+        public static final int ivAppWidgetHS=0x7f0c0021;
+        public static final int ivAppWidgetVS=0x7f0c001e;
+        public static final int ivListItemVideoThumbnail=0x7f0c004e;
+        public static final int llGlobalControl=0x7f0c0003;
+        public static final int lwMusic=0x7f0c0041;
+        public static final int lwPlaylists=0x7f0c0045;
+        public static final int lwShowPlaylist=0x7f0c001b;
+        public static final int lwVideos=0x7f0c0048;
+        public static final int menu_play_song_add_to_playlist=0x7f0c005b;
+        public static final int menu_play_song_share=0x7f0c005a;
+        public static final int opacitybar=0x7f0c0028;
+        public static final int pager=0x7f0c0002;
+        public static final int picker=0x7f0c0026;
+        public static final int remove_from_playlist=0x7f0c0054;
+        public static final int remove_playlist=0x7f0c0052;
+        public static final int sbPlaySongSeekBar=0x7f0c000d;
+        public static final int svbar=0x7f0c0027;
+        public static final int tableRow1=0x7f0c0032;
+        public static final int tableRow2=0x7f0c0035;
+        public static final int tableRow3=0x7f0c0038;
+        public static final int tableRow4=0x7f0c003b;
+        public static final int tableRow5=0x7f0c002c;
+        public static final int tableRow6=0x7f0c002f;
+        public static final int tabs=0x7f0c0001;
+        public static final int textView13=0x7f0c0030;
+        public static final int textView3=0x7f0c0033;
+        public static final int textView4=0x7f0c0036;
+        public static final int textView5=0x7f0c0039;
+        public static final int textView6=0x7f0c003c;
+        public static final int textView7=0x7f0c002d;
+        public static final int tvAppWidgetArtist=0x7f0c0020;
+        public static final int tvAppWidgetTitle=0x7f0c001f;
+        public static final int tvGlobalControlArtist=0x7f0c0005;
+        public static final int tvGlobalControlTitle=0x7f0c0004;
+        public static final int tvListItemVideoDuration=0x7f0c0050;
+        public static final int tvListItemVideoTitle=0x7f0c004f;
+        public static final int tvMusicListItemArtist=0x7f0c004a;
+        public static final int tvMusicListItemDuration=0x7f0c004b;
+        public static final int tvMusicListItemTitle=0x7f0c0049;
+        public static final int tvPlaySongArtist=0x7f0c000a;
+        public static final int tvPlaySongCurrentTime=0x7f0c000b;
+        public static final int tvPlaySongPlaylist=0x7f0c0007;
+        public static final int tvPlaySongRepeat=0x7f0c000f;
+        public static final int tvPlaySongShuffle=0x7f0c0010;
+        public static final int tvPlaySongTitle=0x7f0c0009;
+        public static final int tvPlaySongTotalTime=0x7f0c000c;
+        public static final int tvPlaylistListItemName=0x7f0c004c;
+        public static final int tvPlaylistListItemNumberOfTracks=0x7f0c004d;
+        public static final int tvShowPlaylistName=0x7f0c0018;
+        public static final int tvShowPlaylistTotalDuration=0x7f0c0019;
+        public static final int tvUpdatePlaylistDialogCurrentName=0x7f0c002a;
+        public static final int tvVideoPropertiesCreateDate=0x7f0c003d;
+        public static final int tvVideoPropertiesDuration=0x7f0c002e;
+        public static final int tvVideoPropertiesFileDisplayName=0x7f0c0034;
+        public static final int tvVideoPropertiesLocation=0x7f0c003a;
+        public static final int tvVideoPropertiesResolution=0x7f0c0031;
+        public static final int tvVideoPropertiesSize=0x7f0c0037;
+        public static final int update_playlist=0x7f0c0053;
+        public static final int video_properties=0x7f0c0055;
+        public static final int video_share=0x7f0c0056;
+        public static final int vwPlayVideo=0x7f0c0017;
+        public static final int widget_layout=0x7f0c001c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -187,15 +378,16 @@ public final class R {
         public static final int activity_play_video=0x7f030002;
         public static final int activity_show_playlist=0x7f030003;
         public static final int appwidget_homescreen=0x7f030004;
-        public static final int dialog_fragment_create_playlist=0x7f030005;
-        public static final int dialog_fragment_update_playlist=0x7f030006;
-        public static final int dialog_fragment_video_properties=0x7f030007;
-        public static final int fragment_screen_slide_page_music=0x7f030008;
-        public static final int fragment_screen_slide_page_playlists=0x7f030009;
-        public static final int fragment_screen_slide_page_video=0x7f03000a;
-        public static final int music_list_item=0x7f03000b;
-        public static final int playlist_list_item=0x7f03000c;
-        public static final int video_list_item=0x7f03000d;
+        public static final int dialog_fragment_color_picker=0x7f030005;
+        public static final int dialog_fragment_create_playlist=0x7f030006;
+        public static final int dialog_fragment_update_playlist=0x7f030007;
+        public static final int dialog_fragment_video_properties=0x7f030008;
+        public static final int fragment_screen_slide_page_music=0x7f030009;
+        public static final int fragment_screen_slide_page_playlists=0x7f03000a;
+        public static final int fragment_screen_slide_page_video=0x7f03000b;
+        public static final int music_list_item=0x7f03000c;
+        public static final int playlist_list_item=0x7f03000d;
+        public static final int video_list_item=0x7f03000e;
     }
     public static final class menu {
         public static final int context_menu_add_song_to_playlist=0x7f0b0000;
@@ -340,17 +532,429 @@ public final class R {
         public static final int MyTheme=0x7f0a0005;
     }
     public static final class xml {
-        public static final int apptheme_black_scrubber_control_selector_holo_dark=0x7f050000;
-        public static final int apptheme_black_scrubber_progress_horizontal_holo_dark=0x7f050001;
-        public static final int apptheme_blue_scrubber_control_selector_holo_dark=0x7f050002;
-        public static final int apptheme_blue_scrubber_progress_horizontal_holo_dark=0x7f050003;
-        public static final int apptheme_red_scrubber_control_selector_holo_dark=0x7f050004;
-        public static final int apptheme_red_scrubber_progress_horizontal_holo_dark=0x7f050005;
-        public static final int apptheme_scrubber_control_selector_holo_dark=0x7f050006;
-        public static final int apptheme_scrubber_progress_horizontal_holo_dark=0x7f050007;
-        public static final int apptheme_white_scrubber_control_selector_holo_dark=0x7f050008;
-        public static final int apptheme_white_scrubber_progress_horizontal_holo_dark=0x7f050009;
-        public static final int preferences=0x7f05000a;
-        public static final int themediaplayer_appwidget=0x7f05000b;
+        public static final int apptheme_scrubber_control_selector_holo_dark=0x7f050000;
+        public static final int apptheme_scrubber_progress_horizontal_holo_dark=0x7f050001;
+        public static final int preferences=0x7f050002;
+        public static final int themediaplayer_appwidget=0x7f050003;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ColorBars.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ColorBars_bar_length dv106.lnu.themediaplayer:bar_length}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_orientation_horizontal dv106.lnu.themediaplayer:bar_orientation_horizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_pointer_halo_radius dv106.lnu.themediaplayer:bar_pointer_halo_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_pointer_radius dv106.lnu.themediaplayer:bar_pointer_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorBars_bar_thickness dv106.lnu.themediaplayer:bar_thickness}</code></td><td></td></tr>
+           </table>
+           @see #ColorBars_bar_length
+           @see #ColorBars_bar_orientation_horizontal
+           @see #ColorBars_bar_pointer_halo_radius
+           @see #ColorBars_bar_pointer_radius
+           @see #ColorBars_bar_thickness
+         */
+        public static final int[] ColorBars = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#bar_length}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:bar_length
+        */
+        public static final int ColorBars_bar_length = 1;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#bar_orientation_horizontal}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:bar_orientation_horizontal
+        */
+        public static final int ColorBars_bar_orientation_horizontal = 4;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#bar_pointer_halo_radius}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:bar_pointer_halo_radius
+        */
+        public static final int ColorBars_bar_pointer_halo_radius = 3;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#bar_pointer_radius}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:bar_pointer_radius
+        */
+        public static final int ColorBars_bar_pointer_radius = 2;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#bar_thickness}
+          attribute's value can be found in the {@link #ColorBars} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:bar_thickness
+        */
+        public static final int ColorBars_bar_thickness = 0;
+        /** Attributes that can be used with a ColorPicker.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ColorPicker_color_center_halo_radius dv106.lnu.themediaplayer:color_center_halo_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_center_radius dv106.lnu.themediaplayer:color_center_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_pointer_halo_radius dv106.lnu.themediaplayer:color_pointer_halo_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_pointer_radius dv106.lnu.themediaplayer:color_pointer_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_wheel_radius dv106.lnu.themediaplayer:color_wheel_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorPicker_color_wheel_thickness dv106.lnu.themediaplayer:color_wheel_thickness}</code></td><td></td></tr>
+           </table>
+           @see #ColorPicker_color_center_halo_radius
+           @see #ColorPicker_color_center_radius
+           @see #ColorPicker_color_pointer_halo_radius
+           @see #ColorPicker_color_pointer_radius
+           @see #ColorPicker_color_wheel_radius
+           @see #ColorPicker_color_wheel_thickness
+         */
+        public static final int[] ColorPicker = {
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a
+        };
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#color_center_halo_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:color_center_halo_radius
+        */
+        public static final int ColorPicker_color_center_halo_radius = 3;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#color_center_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:color_center_radius
+        */
+        public static final int ColorPicker_color_center_radius = 2;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#color_pointer_halo_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:color_pointer_halo_radius
+        */
+        public static final int ColorPicker_color_pointer_halo_radius = 5;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#color_pointer_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:color_pointer_radius
+        */
+        public static final int ColorPicker_color_pointer_radius = 4;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#color_wheel_radius}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:color_wheel_radius
+        */
+        public static final int ColorPicker_color_wheel_radius = 0;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#color_wheel_thickness}
+          attribute's value can be found in the {@link #ColorPicker} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:color_wheel_thickness
+        */
+        public static final int ColorPicker_color_wheel_thickness = 1;
+        /** Attributes that can be used with a PagerSlidingTabStrip.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerColor dv106.lnu.themediaplayer:pstsDividerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerPadding dv106.lnu.themediaplayer:pstsDividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorColor dv106.lnu.themediaplayer:pstsIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorHeight dv106.lnu.themediaplayer:pstsIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsScrollOffset dv106.lnu.themediaplayer:pstsScrollOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsShouldExpand dv106.lnu.themediaplayer:pstsShouldExpand}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabBackground dv106.lnu.themediaplayer:pstsTabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabPaddingLeftRight dv106.lnu.themediaplayer:pstsTabPaddingLeftRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextAllCaps dv106.lnu.themediaplayer:pstsTextAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineColor dv106.lnu.themediaplayer:pstsUnderlineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineHeight dv106.lnu.themediaplayer:pstsUnderlineHeight}</code></td><td></td></tr>
+           </table>
+           @see #PagerSlidingTabStrip_pstsDividerColor
+           @see #PagerSlidingTabStrip_pstsDividerPadding
+           @see #PagerSlidingTabStrip_pstsIndicatorColor
+           @see #PagerSlidingTabStrip_pstsIndicatorHeight
+           @see #PagerSlidingTabStrip_pstsScrollOffset
+           @see #PagerSlidingTabStrip_pstsShouldExpand
+           @see #PagerSlidingTabStrip_pstsTabBackground
+           @see #PagerSlidingTabStrip_pstsTabPaddingLeftRight
+           @see #PagerSlidingTabStrip_pstsTextAllCaps
+           @see #PagerSlidingTabStrip_pstsUnderlineColor
+           @see #PagerSlidingTabStrip_pstsUnderlineHeight
+         */
+        public static final int[] PagerSlidingTabStrip = {
+            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
+            0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012,
+            0x7f010013, 0x7f010014, 0x7f010015
+        };
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsDividerColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsDividerColor
+        */
+        public static final int PagerSlidingTabStrip_pstsDividerColor = 2;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsDividerPadding}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsDividerPadding
+        */
+        public static final int PagerSlidingTabStrip_pstsDividerPadding = 5;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsIndicatorColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsIndicatorColor
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsIndicatorHeight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsIndicatorHeight
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorHeight = 3;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsScrollOffset}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsScrollOffset
+        */
+        public static final int PagerSlidingTabStrip_pstsScrollOffset = 7;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsShouldExpand}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsShouldExpand
+        */
+        public static final int PagerSlidingTabStrip_pstsShouldExpand = 9;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsTabBackground}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name dv106.lnu.themediaplayer:pstsTabBackground
+        */
+        public static final int PagerSlidingTabStrip_pstsTabBackground = 8;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsTabPaddingLeftRight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsTabPaddingLeftRight
+        */
+        public static final int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 6;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsTextAllCaps}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsTextAllCaps
+        */
+        public static final int PagerSlidingTabStrip_pstsTextAllCaps = 10;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsUnderlineColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsUnderlineColor
+        */
+        public static final int PagerSlidingTabStrip_pstsUnderlineColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link dv106.lnu.themediaplayer.R.attr#pstsUnderlineHeight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name dv106.lnu.themediaplayer:pstsUnderlineHeight
+        */
+        public static final int PagerSlidingTabStrip_pstsUnderlineHeight = 4;
+    };
 }

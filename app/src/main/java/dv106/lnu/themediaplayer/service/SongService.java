@@ -23,8 +23,8 @@ import android.widget.RemoteViews;
 import java.io.File;
 import java.util.ArrayList;
 
-import dv106.lnu.themediaplayer.MainActivity;
 import dv106.lnu.themediaplayer.R;
+import dv106.lnu.themediaplayer.activities.MainActivity;
 import dv106.lnu.themediaplayer.database.DataSource;
 import dv106.lnu.themediaplayer.pojo.Song;
 import dv106.lnu.themediaplayer.preferences.PreferencesActivity;
@@ -71,8 +71,10 @@ public class SongService extends Service implements OnCompletionListener, AudioM
                     break;
 
                 case "remove":
-                    this.pauseMusic();
+                    this.stopPlaying();
                     stopForeground(true);
+                    this.stopSelf();
+                    setWidgetPlayingButton(false);
                     break;
             }
         }
@@ -101,7 +103,49 @@ public class SongService extends Service implements OnCompletionListener, AudioM
         if (mPlayer != null) {
             mPlayer.reset();
             mPlayer.release();
+            mPlayer = null;
         }
+        disableWidget();
+        System.out.println("Service onDestroy");
+    }
+
+    private void disableWidget(){
+
+        RemoteViews widgetView = new RemoteViews(getPackageName(),
+                R.layout.appwidget_homescreen);
+        AppWidgetManager appWidgetManager = AppWidgetManager
+                .getInstance(this);
+
+        Intent layoutIntent = new Intent();
+        PendingIntent layoutPendingIntent = PendingIntent.getActivity(
+                this, 0, layoutIntent, 0);
+        widgetView.setOnClickPendingIntent(R.id.widget_layout,
+                layoutPendingIntent);
+
+        Intent playOrPauseIntent = new Intent();
+        PendingIntent playOrPausePendingIntent = PendingIntent.getService(
+                this, 2, playOrPauseIntent, 0);
+        widgetView.setOnClickPendingIntent(R.id.ibAppWidgetPlayPause,
+                playOrPausePendingIntent);
+
+        Intent playPreviousIntent = new Intent();
+        PendingIntent playPreviousPendingIntent = PendingIntent.getService(
+                this, 3, playPreviousIntent, 0);
+        widgetView.setOnClickPendingIntent(R.id.ibAppWidgetPrevious,
+                playPreviousPendingIntent);
+
+        Intent playNextIntent = new Intent();
+        PendingIntent playNextPendingIntent = PendingIntent.getService(
+                this, 1, playNextIntent, 0);
+        widgetView.setOnClickPendingIntent(R.id.ibAppWidgetNext,
+                playNextPendingIntent);
+
+        widgetView.setTextViewText(R.id.tvAppWidgetArtist, "");
+        widgetView.setTextViewText(R.id.tvAppWidgetTitle, "");
+        appWidgetManager.updateAppWidget(new ComponentName(this,
+                SongAppWidgetProvider.class), widgetView);
+
+        setWidgetPlayingButton(false);
     }
 
     private void setUpNotification() {
@@ -215,7 +259,7 @@ public class SongService extends Service implements OnCompletionListener, AudioM
             e.printStackTrace();
         }
         /*
-		 * Send a local broadcast to the MainActivity to update the
+         * Send a local broadcast to the MainActivity to update the
 		 * GlobalControl
 		 */
         Intent intent = new Intent(
@@ -238,6 +282,40 @@ public class SongService extends Service implements OnCompletionListener, AudioM
                     R.layout.appwidget_homescreen);
             AppWidgetManager appWidgetManager = AppWidgetManager
                     .getInstance(this);
+
+            			/* set on click for the AppWidget 'next' button */
+            Intent playNextIntent = new Intent(this, SongService.class);
+            playNextIntent.putExtra("action", "next");
+            PendingIntent playNextPendingIntent = PendingIntent.getService(
+                    this, 1, playNextIntent, 0);
+            widgetView.setOnClickPendingIntent(R.id.ibAppWidgetNext,
+                    playNextPendingIntent);
+
+			/* set on click for the AppWidget 'play/pause' button */
+            Intent playOrPauseIntent = new Intent(this, SongService.class);
+            playOrPauseIntent.putExtra("action", "playOrPause");
+            PendingIntent playOrPausePendingIntent = PendingIntent.getService(
+                    this, 2, playOrPauseIntent, 0);
+            widgetView.setOnClickPendingIntent(R.id.ibAppWidgetPlayPause,
+                    playOrPausePendingIntent);
+
+			/* set on click for the AppWidget 'previous' button */
+            Intent playPreviousIntent = new Intent(this, SongService.class);
+            playPreviousIntent.putExtra("action", "previous");
+            PendingIntent playPreviousPendingIntent = PendingIntent.getService(
+                    this, 3, playPreviousIntent, 0);
+            widgetView.setOnClickPendingIntent(R.id.ibAppWidgetPrevious,
+                    playPreviousPendingIntent);
+
+            			/* set on click for the AppWidget layout */
+            Intent layoutIntent = new Intent(this, MainActivity.class);
+            layoutIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            PendingIntent layoutPendingIntent = PendingIntent.getActivity(
+                    this, 0, layoutIntent, 0);
+            widgetView.setOnClickPendingIntent(R.id.widget_layout,
+                    layoutPendingIntent);
+
             widgetView.setTextViewText(R.id.tvAppWidgetArtist, tmpSong.getARTIST());
             widgetView.setTextViewText(R.id.tvAppWidgetTitle, tmpSong.getTITLE());
             appWidgetManager.updateAppWidget(new ComponentName(this,
@@ -381,7 +459,7 @@ public class SongService extends Service implements OnCompletionListener, AudioM
                 mPlayer.start();
                 setWidgetPlayingButton(true);
                 return 1;
-            }else if(songPath != null && playlist != null) {
+            } else if (songPath != null && playlist != null) {
                 this.playMusic(songPath, playlist);
                 this.seekToPosition(resumedAfterAudioFocus);
             }
@@ -401,7 +479,7 @@ public class SongService extends Service implements OnCompletionListener, AudioM
      * Returns the current position of the current track playing
      */
     public int getCurrentPosition() {
-        if (mPlayer != null) {
+        if (mPlayer != null && mPlayer.isPlaying()) {
             return mPlayer.getCurrentPosition();
         } else {
             return -1;
@@ -412,7 +490,11 @@ public class SongService extends Service implements OnCompletionListener, AudioM
      * Returns the total duration of the current track playing
      */
     public int getTotalDuration() {
-        return mPlayer.getDuration();
+        if (mPlayer != null && mPlayer.isPlaying())
+            return mPlayer.getDuration();
+        else{
+            return 0;
+        }
     }
 
     /**
@@ -451,6 +533,13 @@ public class SongService extends Service implements OnCompletionListener, AudioM
         if (mPlayer != null && mPlayer.isPlaying()) {
             mPlayer.pause();
         }
+    }
+
+    public void stopPlaying(){
+        mPlayer.stop();
+        mPlayer.reset();
+        mPlayer.release();
+        mPlayer = null;
     }
 
     /**

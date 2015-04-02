@@ -27,9 +27,6 @@ public class PreferencesFragment extends PreferenceFragment implements
 		// Load the preferences from an XML resource
 		addPreferencesFromResource(R.xml.preferences);
 
-		ListPreference txtColor = (ListPreference) findPreference("txtColor");
-		txtColor.setSummary(txtColor.getEntry());
-
 		ListPreference txtSize = (ListPreference) findPreference("txtSize");
 		txtSize.setSummary(txtSize.getEntry());
 
@@ -56,7 +53,7 @@ public class PreferencesFragment extends PreferenceFragment implements
 			pref.setSummary(listPref.getEntry());
 		}
 
-		if (key.equals("txtColor")) {
+		if (key.equals("colorTheme")) {
 
             RemoteViews widgetView = new RemoteViews(getActivity().getPackageName(),
                     R.layout.appwidget_homescreen);
@@ -64,16 +61,15 @@ public class PreferencesFragment extends PreferenceFragment implements
                     .getInstance(getActivity());
             SharedPreferences sharedPref = PreferenceManager
                     .getDefaultSharedPreferences(getActivity());
-            String txtColorString = sharedPref.getString(
-                    PreferencesActivity.KEY_PREF_TXT_COLOR, "");
-            int txtColor = Integer.parseInt(txtColorString);
+            int colorTheme = sharedPref.getInt(
+                    PreferencesActivity.KEY_PREF_TXT_COLOR, 0);
 
             Bitmap b = Bitmap.createBitmap(2, 2, Bitmap.Config.ARGB_8888);
             Canvas c = new Canvas(b);
-            c.drawColor(txtColor);
+            c.drawColor(colorTheme);
 
-            widgetView.setTextColor(R.id.tvAppWidgetArtist, txtColor);
-            widgetView.setTextColor(R.id.tvAppWidgetTitle, txtColor);
+            widgetView.setTextColor(R.id.tvAppWidgetArtist, colorTheme);
+            widgetView.setTextColor(R.id.tvAppWidgetTitle, colorTheme);
             widgetView.setImageViewBitmap(R.id.ivAppWidgetHS, b);
             widgetView.setImageViewBitmap(R.id.ivAppWidgetVS, b);
 
@@ -97,4 +93,8 @@ public class PreferencesFragment extends PreferenceFragment implements
 				.unregisterOnSharedPreferenceChangeListener(this);
 		super.onPause();
 	}
+
+
 }
+
+

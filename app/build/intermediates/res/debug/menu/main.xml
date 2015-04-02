@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="dv106.lnu.themediaplayer.MainActivity" >
+    tools:context="dv106.lnu.themediaplayer.activities.MainActivity" >
 
     <item
         android:id="@+id/action_settings"

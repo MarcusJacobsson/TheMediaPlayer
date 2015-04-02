@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="color_array">
         <item>Red</item>
@@ -26,7 +26,10 @@
         <item>16</item>
         <item>22</item>
     </string-array>
-    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
     <color name="gc_background">#292929</color>
@@ -34,11 +37,26 @@
     <color name="main_background">#070707</color>
     <color name="white">#ffffff</color>
     <color name="widget_background">#191919</color>
-    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/dimens.xml -->
+    <declare-styleable name="ColorBars"><attr format="dimension" name="bar_thickness"/><attr format="dimension" name="bar_length"/><attr format="dimension" name="bar_pointer_radius"/><attr format="dimension" name="bar_pointer_halo_radius"/><attr format="boolean" name="bar_orientation_horizontal"/></declare-styleable>
+    <declare-styleable name="ColorPicker"><attr format="dimension" name="color_wheel_radius"/><attr format="dimension" name="color_wheel_thickness"/><attr format="dimension" name="color_center_radius"/><attr format="dimension" name="color_center_halo_radius"/><attr format="dimension" name="color_pointer_radius"/><attr format="dimension" name="color_pointer_halo_radius"/></declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/></declare-styleable>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/build/intermediates/exploded-aar/com.larswerkman/HoloColorPicker/1.5/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bar_length">240dp</dimen>
+    <dimen name="bar_pointer_halo_radius">14dp</dimen>
+    <dimen name="bar_pointer_radius">6dp</dimen>
+    <dimen name="bar_thickness">4dp</dimen>
+    <dimen name="color_center_halo_radius">60dp</dimen>
+    <dimen name="color_center_radius">54dp</dimen>
+    <dimen name="color_pointer_halo_radius">18dp</dimen>
+    <dimen name="color_pointer_radius">14dp</dimen>
+    <dimen name="color_wheel_radius">124dp</dimen>
+    <dimen name="color_wheel_thickness">8dp</dimen>
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_create_playlist">Create playlist</string>
     <string name="action_settings">Preferences</string>
@@ -147,7 +165,7 @@
     <string name="video_properties_dialog_mb">MB</string>
     <string name="video_properties_dialog_posBtn">OK</string>
     <string name="youtube_url">http://www.youtube.com/</string>
-    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20-%20Copy%20-%20Copy2/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Marcus%20Jacobsson/Dropbox/Development/Android%20Studio%20Workspace/TheMediaPlayer%20git/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

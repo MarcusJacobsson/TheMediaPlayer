@@ -98,9 +98,9 @@ public class ShowPlaylistActivity extends FragmentActivity implements
 		btnAddTrack.setOnClickListener(this);
 		
 		SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-		String txtColor = sharedPref.getString(PreferencesActivity.KEY_PREF_TXT_COLOR, "");
-		tvShowPlaylistName.setTextColor(Integer.parseInt(txtColor));
-		tvShowPlaylistTotalDuration.setTextColor(Integer.parseInt(txtColor));
+		int txtColor = sharedPref.getInt(PreferencesActivity.KEY_PREF_TXT_COLOR, 1);
+		tvShowPlaylistName.setTextColor(txtColor);
+		tvShowPlaylistTotalDuration.setTextColor(txtColor);
 	}
 	
 	@Override

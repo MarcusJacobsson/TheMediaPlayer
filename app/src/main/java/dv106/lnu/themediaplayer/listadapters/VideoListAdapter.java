@@ -65,11 +65,11 @@ public class VideoListAdapter extends ArrayAdapter<Video> {
 		/* prefs */
 		SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getContext());
 		String txtSize = sharedPref.getString(PreferencesActivity.KEY_PREF_TXT_SIZE, "");
-		String txtColor = sharedPref.getString(PreferencesActivity.KEY_PREF_TXT_COLOR, "");
+		int txtColor = sharedPref.getInt(PreferencesActivity.KEY_PREF_TXT_COLOR, 1);
 		tvTitle.setTextSize(Float.parseFloat(txtSize));
-		tvTitle.setTextColor(Integer.parseInt(txtColor));
+		tvTitle.setTextColor(txtColor);
 		tvDuration.setTextSize(Float.parseFloat(txtSize));
-		tvDuration.setTextColor(Integer.parseInt(txtColor));
+		tvDuration.setTextColor(txtColor);
 
         Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.push_left_in);
         animation.setDuration(500);
